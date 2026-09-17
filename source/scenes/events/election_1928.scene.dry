@@ -2216,14 +2216,6 @@ priority: 2
 
 There are enough votes for the <span style="color: #7A3C00;">Nazis</span> and the [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span> ?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span> ?] to form a coalition. [+ nsdap_leader +] has made his participation in government contingent on being appointed chancellor. It is up to President [+ president +] to decide. As this is a parliamentary cabinet, [+ president +] is more likely to appoint [+ nsdap_chancellor +].
 
-@far_right_win
-on-arrival: chancellor = nsdap_chancellor; chancellor_party = "NSDAP"
-
-[? if president == "Hindenburg" : President Hindenburg's camarilla ?][? if president != "Hindenburg" and president != "Braun": President [+ president +] ?][? if president == "Braun" : President Braun somehow ?] has decided that [+ nsdap_leader +] must be chancellor [? if president == "Hindenburg": , and the aging president accepts their recommendations. ?][? if president != "Hindenburg" : because it is what the constitution would stipulate. ?]
-
-- @hitler_takes_power: What do we do now?
-
-
 @far_right_fail
 face-image: img/portraits/goerdeler.jpg
 on-arrival: {!
@@ -2913,13 +2905,6 @@ With Papen back in his inner circle after Schleicher’s fall, and his disillusi
 Once again, the question stands before us: do we choose to tolerate this cabinet? That is for you to decide.
 
 The new Reichstag will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
-
-@hitler_chancellor
-on-arrival: chancellor = "Hitler"; chancellor_party = "NSDAP"
-
-There is no path to a majority government for now. The scheming around President Hindenburg is leading to only one path - that of Chancellor Adolf Hitler. [? if largest_party == "NSDAP" : Since they are the largest party, it is not exactly contrary to parliamentary procedure, so it is difficult to raise objections solely on procedural grounds. ?] [? if hitler_deported: Despite his earlier deportation, the <span style="color: #7A3C00;">Nazi</span> leaders and their <span style="color: #3E88B3;">reactionary</span> allies have connived for the president to give him German citizenship after all. ?]
-
-- @hitler_takes_power: What now?
 
 # if NSDAP is largest party and Hindenburg is president, then Hindenburg appoints Hitler chancellor.
 
