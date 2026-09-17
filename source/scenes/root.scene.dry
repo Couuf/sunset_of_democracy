@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= Sunset of Democracy: An Alternate History
 
 @start_menu_2
 
@@ -125,8 +125,8 @@ Q.moderate_plan_adopted = 0;
 // organiudnations
 
 // inter-party relations
-Q.udn_relation = 50;
-Q.psd_relation = 25;
+Q.udn_relation = 20;
+Q.psd_relation = 60;
 Q.pr_relation = 60;
 Q.psp_relation = 35;
 // DNVP and NSDAP are invariably hostile
@@ -134,13 +134,9 @@ Q.dnvp_relation = 5;
 Q.nsdap_relation = 0;
 Q.lvp_relation = 0;
 
-Q.psd_leader = "Thälmann";
-Q.udn_leader = "Marx";
+Q.psd_leader = "Peixoto";
+Q.udn_leader = "Magalhães";
 Q.udn_ideology = "Right";
-Q.cvp_ideology = "Moderate";
-Q.stegerwald_path = 0;
-Q.nsdap_leader = "Hitler";
-Q.nsdap_chancellor = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
