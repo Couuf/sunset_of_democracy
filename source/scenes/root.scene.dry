@@ -517,7 +517,6 @@ Q.economic_records = [];
 // State of the government
 Q.president = "Quadros";
 Q.president_party = "PTN";
-Q.president_ideology = "Hindenburg";
 Q.vice_president = "Goulart";
 Q.vice_president_party = "PTB";
 // brazil starts as presidential, may only become parliamentary after the resignation crisis in mid 1961
